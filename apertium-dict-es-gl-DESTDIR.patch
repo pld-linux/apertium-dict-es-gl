@@ -1,0 +1,16 @@
+--- apertium-es-gl-1.0.7/Makefile.am.orig	2009-03-11 22:20:58.000000000 +0100
++++ apertium-es-gl-1.0.7/Makefile.am	2010-12-29 18:29:47.926121936 +0100
+@@ -119,9 +119,9 @@
+ 		  
+ install-data-local:
+ 	apertium-gen-modes modes.xml apertium-$(PREFIX1)
+-	$(INSTALL_DATA) $(PREFIX1).mode $(apertium_es_modesdir)
+-	$(INSTALL_DATA) $(PREFIX2).mode $(apertium_es_modesdir)
+-	$(INSTALL_DATA) $(BASENAME).$(PREFIX1).t1x $(apertium_es_gldir)
+-	$(INSTALL_DATA) $(BASENAME).$(PREFIX2).t1x $(apertium_es_gldir)
++	$(INSTALL_DATA) $(PREFIX1).mode $(DESTDIR)$(apertium_es_modesdir)
++	$(INSTALL_DATA) $(PREFIX2).mode $(DESTDIR)$(apertium_es_modesdir)
++	$(INSTALL_DATA) $(BASENAME).$(PREFIX1).t1x $(DESTDIR)$(apertium_es_gldir)
++	$(INSTALL_DATA) $(BASENAME).$(PREFIX2).t1x $(DESTDIR)$(apertium_es_gldir)
+ 
+ CLEANFILES = -rf $(TARGETS_COMMON) modes
