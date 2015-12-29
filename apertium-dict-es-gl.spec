@@ -2,12 +2,12 @@ Summary:	Spanish-Galician language pair for Apertium
 Summary(pl.UTF-8):	Para języków hiszpański-galicyjski dla Apertium
 %define	lpair	es-gl
 Name:		apertium-dict-%{lpair}
-Version:	1.0.7
+Version:	1.0.8
 Release:	1
 License:	GPL v2+
 Group:		Applications/Text
 Source0:	http://downloads.sourceforge.net/apertium/apertium-%{lpair}-%{version}.tar.gz
-# Source0-md5:	17e5dd2df012f8848479ed9205d9248c
+# Source0-md5:	d530f344f79a19e8d96bf032998e3bc2
 Patch0:		%{name}-DESTDIR.patch
 Patch1:		%{name}-apertium32.patch
 URL:		http://www.apertium.org/
